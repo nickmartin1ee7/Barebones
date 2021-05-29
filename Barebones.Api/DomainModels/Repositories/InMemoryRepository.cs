@@ -8,7 +8,7 @@ namespace Barebones.Api.DomainModels.Repositories
         where TModel : DataModel<TKey, TModel>
 
     {
-        private ConcurrentDictionary<TKey, TModel> _concurrentDictionary = new ConcurrentDictionary<TKey, TModel>();
+        private readonly ConcurrentDictionary<TKey, TModel> _concurrentDictionary = new ConcurrentDictionary<TKey, TModel>();
 
         public IEnumerable<TModel> GetAll() => _concurrentDictionary.Values;
 

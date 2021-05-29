@@ -2,7 +2,7 @@
 {
     public class DataModel<TKey, TModel>
     {
-        public TKey Key { get; set; }
-        public TModel Value { get; set; }
+        public TKey Key { get; init; }
+        public TModel Value { get; init; }
     }
 }

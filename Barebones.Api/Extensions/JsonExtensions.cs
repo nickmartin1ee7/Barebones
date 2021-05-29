@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
-using Barebones.Api.DomainModels;
 
 namespace Barebones.Api.Extensions
 {
